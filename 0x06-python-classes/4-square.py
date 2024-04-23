@@ -36,4 +36,4 @@ class Square:
         """Calculate area
         Args:
         """
-        return(self.__size * self.__size)
+        return (self.__size * self.__size)
