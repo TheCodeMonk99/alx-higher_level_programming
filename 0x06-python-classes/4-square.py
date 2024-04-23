@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """This class defines a square"""
 
 
@@ -11,7 +12,8 @@ class Square:
         Args:
             size (int): The size of the square
         """
-    @getter
+ 
+   @getter
     def size(self):
         """Get/set the current size of square"""
         return (self.__size)
@@ -27,6 +29,7 @@ class Square:
         elif size < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
+
     """This calculates the area of the square"""
     def area(self):
         """Calculate area
