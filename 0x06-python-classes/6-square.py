@@ -5,7 +5,7 @@
 
 class Square:
     """This defines the square"""
-    def __init__(self, size=0, position(0, 0)):
+    def __init__(self, size=0, position=(0, 0)):
         """Initializes the object
         Args:
             size (int): size of square
@@ -19,7 +19,7 @@ class Square:
         """Returns size of square"""
         return (self.__size)
 
-    @set.size
+    @size.setter
     def size(self, value):
         """Sets the value of size"""
         if not isinstance(value, int):
@@ -28,7 +28,7 @@ class Square:
             raise ValueError("size must be => 0")
         self.__size = value
 
-    @postion_property
+    @property
     def position(self):
         """Returns position of square"""
         return (self.__position)
@@ -51,8 +51,8 @@ class Square:
             print("")
             return
 
-            [print("") for i in range(0, self.__position[1])]
-            for i in range(0, self.__size):
-                [print(" ", end="") for j in range(0, self.__position[0])]
-                [print("#", end="") for k in range(0, self.__size)]
+        [print("") for i in range(0, self.__position[1])]
+        for i in range(0, self.__size):
+            [print(" ", end="") for j in range(0, self.__position[0])]
+            [print("#", end="") for k in range(0, self.__size)]
             print("")
