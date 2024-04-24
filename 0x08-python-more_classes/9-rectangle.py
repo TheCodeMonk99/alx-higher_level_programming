@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""Defines a Rectangle class."""
+"""Defines a Rectangle class yes it does"""
 
 
 class Rectangle:
@@ -103,7 +103,7 @@ class Rectangle:
             return (rect_2)
 
     @classmethod
-    def square(cls, size=0)
+    def square(cls, size=0):
         """Returns a new rectangle with size
 
         Args:
