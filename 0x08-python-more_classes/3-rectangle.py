@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """Defines a Rectangle class."""
 
 
@@ -40,3 +41,25 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
+
+    def area(self):
+        """Defines area of rectangle"""
+        return self.__width * self.__height
+
+    def perimeter(self):
+        """Defines perimeter of rectangle"""
+        if self.__width == 0 or self.__height == 0:
+            return 0
+        return 2 * (self.__width + self.__height)
+
+    def __str__(self):
+        """prints the rectangle"""
+        if self.__width == 0 or self.__height == 0:
+            return ("")
+
+        rect = []
+        for i in range(self.__height):
+            [rect.append('#') for j in range(self.__width)]
+            if i != self.__height - 1:
+                rect.append("\n")
+        return ("".join(rect))
