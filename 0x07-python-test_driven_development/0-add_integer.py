@@ -4,11 +4,9 @@
 
 def add_integer(a, b=98):
     """ Sums a and b
-    
     Args:
         a (int): first int
         b (int): second int
-    
     Float: converts float to int
     Raises: TypeError: If either of a or b is non-interger and
     non-foat
