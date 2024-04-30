@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Add all arguments to a Python list and saves to JSON file"""
+"""Add all arguments to a Python list and 
+saves to JSON file"""
 import sys
 
 
